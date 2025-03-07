@@ -13,9 +13,8 @@ function hello(retry_count: number): boolean | void {
   }
 }
 
-const args = process.argv.slice(2); // コマンドライン引数を取得（0と1はNode.jsとスクリプトパス）
-const num = parseInt(args[0], 10); // 引数を数値に変換
-
+const args = process.argv.slice(2); 
+const num = parseInt(args[0], 10); 
 if (!isNaN(num)) {
   hello(num);
 } else {
